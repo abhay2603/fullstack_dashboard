@@ -21,3 +21,23 @@ CREATE TABLE sales (
 
 INSERT INTO sales (InvoiceID, Branch, City, CustomerType, Gender, ProductLine, UnitPrice, Quantity, Tax, Total, Date, Time, Payment, COGS, GrossMarginPercentage, GrossIncome, Rating)
 VALUES ('12345', 'A', 'New York', 'Member', 'Male', 'Electronic accessories', 15.5, 2, 3.0, 33.0, '01-01-2023', '08:30:00', 'Cash', 30.0, 50.0, 15.0, 4.5);
+
+
+
+INSERT INTO public.sales(
+    "Invoice ID", "Branch", "City", "Customer type", "Gender", 
+    "Product line", "Unit price", "Quantity", "Tax 5%", 
+    "Total", "Date", "Time", "Payment", cogs, 
+    "gross margin percentage", "gross income", "Rating")
+VALUES 
+    ('INV001', 'A', 'New York', 'Member', 'Male', 'Health and beauty', 25.50, 3, 3.83, 80.33, '2023-01-10', '10:00', 'Cash', 76.50, 5.00, 3.83, 7.5),
+    ('INV002', 'B', 'Los Angeles', 'Normal', 'Female', 'Electronic accessories', 15.99, 2, 1.60, 33.58, '2023-01-11', '11:30', 'Credit card', 31.98, 4.81, 1.60, 8.2),
+    ('INV003', 'C', 'Chicago', 'Member', 'Male', 'Home and lifestyle', 40.00, 1, 2.00, 42.00, '2023-01-12', '12:45', 'Ewallet', 40.00, 4.76, 2.00, 6.5),
+    ('INV004', 'A', 'Houston', 'Normal', 'Female', 'Health and beauty', 30.00, 5, 7.50, 157.50, '2023-01-13', '14:15', 'Cash', 150.00, 5.00, 7.50, 9.3),
+    ('INV005', 'B', 'Phoenix', 'Member', 'Male', 'Fashion accessories', 10.00, 6, 3.00, 63.00, '2023-01-14', '15:50', 'Credit card', 60.00, 5.00, 3.00, 8.7),
+    ('INV006', 'C', 'Philadelphia', 'Normal', 'Female', 'Food and beverages', 5.00, 10, 2.50, 52.50, '2023-01-15', '17:20', 'Ewallet', 50.00, 4.76, 2.50, 7.0),
+    ('INV007', 'A', 'San Antonio', 'Member', 'Male', 'Sports and travel', 20.00, 4, 4.00, 84.00, '2023-01-16', '18:35', 'Cash', 80.00, 4.76, 4.00, 6.2),
+    ('INV008', 'B', 'San Diego', 'Normal', 'Female', 'Fashion accessories', 50.00, 2, 5.00, 105.00, '2023-01-17', '19:50', 'Credit card', 100.00, 4.76, 5.00, 9.1),
+    ('INV009', 'C', 'Dallas', 'Member', 'Male', 'Electronic accessories', 60.00, 1, 3.00, 63.00, '2023-01-18', '21:00', 'Ewallet', 60.00, 4.76, 3.00, 8.5),
+    ('INV010', 'A', 'San Jose', 'Normal', 'Female', 'Home and lifestyle', 35.00, 3, 5.25, 110.25, '2023-01-19', '22:30', 'Cash', 105.00, 5.00, 5.25, 7.8);
+
