@@ -1,0 +1,23 @@
+CREATE TABLE sales (
+    Invoice ID TEXT,
+    Branch TEXT,
+    City TEXT,
+    Customer type TEXT,
+    Gender TEXT,
+    Product line TEXT,
+    Unit price REAL,
+    Quantity INTEGER,
+    Tax 5% REAL,
+    Total REAL,
+    Date TEXT,
+    Time TEXT,
+    Payment TEXT,
+    cogs REAL,
+    gross margin percentage REAL,
+    gross income REAL,
+    Rating REAL
+);
+
+
+INSERT INTO sales (InvoiceID, Branch, City, CustomerType, Gender, ProductLine, UnitPrice, Quantity, Tax, Total, Date, Time, Payment, COGS, GrossMarginPercentage, GrossIncome, Rating)
+VALUES ('12345', 'A', 'New York', 'Member', 'Male', 'Electronic accessories', 15.5, 2, 3.0, 33.0, '01-01-2023', '08:30:00', 'Cash', 30.0, 50.0, 15.0, 4.5);
